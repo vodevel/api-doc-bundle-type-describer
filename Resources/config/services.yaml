@@ -1,0 +1,11 @@
+services:
+  requestDescriber:
+    class: 'Vodevel\ApiDocBundleTypeDescriber\Describer\RequestBodyDescriber'
+  responseDescriber:
+    class: 'Vodevel\ApiDocBundleTypeDescriber\Describer\ResponseBodyDescriber'
+  Vodevel\ApiDocBundleTypeDescriber\Describer\TypeDescriber:
+    arguments:
+      $requestDescriber: '@requestDescriber'
+      $responseDescriber: '@responseDescriber'
+    tags:
+      - { name: nelmio_api_doc.route_describer }
