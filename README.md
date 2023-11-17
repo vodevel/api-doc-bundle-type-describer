@@ -6,6 +6,7 @@ Describer to the [nelmio/api-doc-bundle](https://github.com/nelmio/NelmioApiDocB
 ```shell
 composer require vodevel/api-doc-bundle-type-describer
 ```
+
 ## Usage
 
 Unfortunately, it doesn't work without a ```Tag``` attribute yet, don't forget to add it.

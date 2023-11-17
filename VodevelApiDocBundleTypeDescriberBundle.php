@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Vodevel\ApiDocBundleTypeDescriber\DependencyInjection\VodevelApiDocTypeDescriberExtension;
 
-class VodevelApiDocBundleTypeDescriber extends Bundle
+class VodevelApiDocBundleTypeDescriberBundle extends Bundle
 {
     public function getContainerExtension(): ?ExtensionInterface
     {

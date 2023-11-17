@@ -1,8 +1,13 @@
 services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
   requestDescriber:
     class: 'Vodevel\ApiDocBundleTypeDescriber\Describer\RequestBodyDescriber'
   responseDescriber:
     class: 'Vodevel\ApiDocBundleTypeDescriber\Describer\ResponseBodyDescriber'
+
   Vodevel\ApiDocBundleTypeDescriber\Describer\TypeDescriber:
     arguments:
       $requestDescriber: '@requestDescriber'
